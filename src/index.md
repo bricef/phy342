@@ -1,10 +1,3 @@
-title:   An Introduction to Electronics
-topnav:		Home
-           PHY342
-topnav_url:	http://www.bricefernandes.com/html/
-		http://www.bricefernandes.com/html/index.html
-
-
 An Introduction to Electronics
 ==============================
 {@class=centre}
