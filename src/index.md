@@ -11,16 +11,16 @@ Lessons
 
 1. [Getting comfortable](lesson1.html)
 2. [Fun with LEDs](lesson2.html)
-3. [](lesson3.html)
-4. [](lesson4.html)
-5. [](lesson5.html)
-6. [A light following robot](lesson6.html)
-7. [Amplifiers](lesson7.html)
-8. [An optical telescope](lesson8.html)
-9. [Filters](lesson9.html)
+3. [Sensing your world](lesson3.html)
+4. [An Optical Telephone](lesson4.html)
+5. [A light following robot](lesson5.html)
+6. [Filters](lesson6.html)
+7. [A Simple Radio](lesson7.html)
+8. [Amplifiers](lesson8.html)
+9. [The Digital Telephone](lesson9.html)
 10. [](lesson10.html)
-11. [Radio Project 1](lesson11.html)
-12. [Radio Project 2](lesson12.html)
+11. [Revisiting the Radio 1](lesson11.html)
+12. [Revisiting the Radio 2](lesson12.html)
 
 We also keep some [educator resources](educator_lessons.html) such as costed component lists, marking checklist, lesson plans, etc.
 
@@ -76,12 +76,13 @@ Most excercises will require nothing beyond what is described in the basic secti
  + [Capacitor combination](capacitor_combination.html)
  + [Appreciating Ohm's law](ohms_law_ex.html)
  + [Understanding Kirchoff's laws](kirchoff_ex.html)
- + [Norton and Th&eacute;venin's theorems](norton_thevenin_ex.html)
 
 ###Intermediate
  + [Building filters](building_filters.html) (Will require a signal generator.)
  + [An introduction to qucs](qucs_first_setps.html) (Will require a computer)
- + [The homework timer](homework_timer.css) (Will require an oscillating crystal)
+ + [The homework timer](homework_timer.html) (Will require an oscillating crystal)
+ + [Norton and Th&eacute;venin's theorems](norton_thevenin_ex.html)
+ 
 ###Advanced
  + [building a radio](building_a_radio.html)
  + [An analogue optical fiber telephone](fiber_telephone.html) (Will require optical fiber)
