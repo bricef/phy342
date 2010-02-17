@@ -12,16 +12,23 @@ import md2html
 
 def usage():
 	print"""
-	usage: python Makefile.py <sourcedir> <targetdir>
+	usage: python Makefile.py [-f] <sourcedir> <targetdir>
 	
 		sourcedir: directory structure with markdown files
 		targetdir: writable directory for the html files
-	"""
+	    
+        -f      Force remake, ignoring file timestamps
+    """
 
 
-def make(search_path, write_path):	
+def make(search_path, write_path, forced=False):	
+	if forced:
+		print("== Forced remake\n")
+	
+	
 	madestuff=False
 	for path, subdirs, files in os.walk(search_path):
+		#something smells here:
 		targetdir=re.sub("src", "html", os.path.abspath(os.path.relpath(path, write_path)))
 		path=os.path.abspath(path)
 		
@@ -34,7 +41,6 @@ def make(search_path, write_path):
 			do_make = False
 			sourcefile=os.path.join(path, filename)
 			if filename[-3:]==".md":
-				
 				targetfile=os.path.join(targetdir, filename[:-3]+".html")
 				if os.access(targetfile, os.F_OK):
 					if os.access(targetfile, os.R_OK|os.W_OK):
@@ -47,15 +53,14 @@ def make(search_path, write_path):
 					print("Target does not exist.")
 					do_make=True
 				
-						
-			if do_make == True:
-				madestuff=True
-				try:
-					print("Making".ljust(10)+targetfile+"\nfrom".ljust(10)+sourcefile+"\n")
-					#print "Making".ljust(10)+filename.ljust(20)+"->".ljust(10)+filename[:-3]+".html"
-					open(targetfile,"w").write(md2html.convert(open(sourcefile, "r").read()))
-				except AttributeError:
-					print "\t[Error]: Making '%s' from '%s'. Check source file syntax. Ignoring source."%(targetfile, sourcefile)
+				if do_make or forced:
+					madestuff=True
+					try:
+						print("Making".ljust(10)+targetfile+"\nfrom".ljust(10)+sourcefile+"\n")
+						#print "Making".ljust(10)+filename.ljust(20)+"->".ljust(10)+filename[:-3]+".html"
+						open(targetfile,"w").write(md2html.convert(open(sourcefile, "r").read()))
+					except AttributeError:
+						print "\t[Error]: Making '%s' from '%s'. Check source file syntax. Ignoring source."%(targetfile, sourcefile)
 	return madestuff
 	
 if __name__=="__main__":
@@ -63,15 +68,21 @@ if __name__=="__main__":
 	print ""
 	
 	try:
-		sourcedir=sys.argv[1]
-		targetdir=sys.argv[2]
+		if sys.argv[1] != "-f":
+			sourcedir=sys.argv[1]
+			targetdir=sys.argv[2]
+			is_forced=False
+		else:
+			sourcedir=sys.argv[2]
+			targetdir=sys.argv[3]
+			is_forced=True
 	except IndexError:
 		usage()
 		sys.exit()
 	if not os.access(sourcedir, os.R_OK|os.W_OK):
 		print "'%s' could not be read or '%s' could not be written to. Exiting."%(sourcedir, targetdir)
 		sys.exit()
-	donestuff = make(sys.argv[1],sys.argv[2] )
+	donestuff = make(sourcedir,targetdir, forced= is_forced)
 	if not donestuff:
 		print("All files up to date, nothing done.")
 	end=datetime.datetime.now()
