@@ -81,8 +81,8 @@ Most excercises will require nothing beyond what is described in the basic secti
 ###Intermediate
  + [Building filters](building_filters.html) (Will require a signal generator.)
  + [An introduction to qucs](qucs_first_setps.html) (Will require a computer)
-
-####Advanced
+ + [The homework timer](homework_timer.css) (Will require an oscillating crystal)
+###Advanced
  + [building a radio](building_a_radio.html)
  + [An analogue optical fiber telephone](fiber_telephone.html) (Will require optical fiber)
  + [A Digital optical fiber telephone](digital_telephone.html) (Will require optical fiber)
