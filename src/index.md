@@ -103,7 +103,8 @@ Practical guides
 
 Miscellaneous
 -------------
- 
+
+ + [Attribution](attribution.html) (Many images and resources in this guide come from others. The full list is here.)
  + [Math primer](math_primer.html)
  + [Statement of intent](intent.html)
  + [Who are we](who.html)

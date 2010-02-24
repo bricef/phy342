@@ -38,6 +38,10 @@ margin: 0 auto;
 	margin-top:2em;
 }
 
+img{
+max-width: 560px;
+}
+
 h1,h2,h3,h4{
     font-family:Georgia, "Times New Roman", Times, serif;
     color:#00008b;
@@ -118,8 +122,8 @@ vertical-align:middle;
 }
 
 p.endnote{
-	margin-top:4em;
 	font-size:small;
+    text-align:center;
 }
 
 #valid{
