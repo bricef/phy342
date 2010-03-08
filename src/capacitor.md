@@ -1,7 +1,7 @@
 #The Capacitor
 
 {@class=centre}
-![A capacitor](../resources/capacitor.jpeg)
+![A capacitor](../resources/capacitor.jpg)
 
 The simplest capacitor consist of two metal plates with an insulating medium (also known as dialectric) between them.
 Main purpose of the capacitor is to store electric charge.
@@ -25,12 +25,17 @@ $$C=\epsilon\frac{A}{d}$$
 {@class=centre}
 ![in parallel](../resources/cap_par.png)
 
-$$C=\frac{1}{C_1}+\frac{1}{C_2}+...+\frac{1}{C_n)$$
+To calculate total capacitance the folowing equation can be used
+
+$$C=C_1+C_2+...+C_n$$
 
 ##Capacitors in series
 
 {@class=centre}
 ![in series](../resources/cap_ser.png)
 
-$$C=C_1+C_2+...+C_n$$
+Total capacitance is given by
+
+$$C=\frac{1}{C_1}+\frac{1}{C_2}+...+\frac{1}{C_n$$
+
 
