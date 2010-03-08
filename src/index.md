@@ -28,8 +28,7 @@ Electronics: Principles
 -----------------------
 
  + [The water analogy](water_analogy.html)
- + [Kirchoff's current law](kirchoff_current.html)
- + [Kirchoff's voltage law](kirchoff_voltage.html)
+ + [Kirchoff's Laws](kirchoffs_law.html)
  + [Ohm's Law](ohms_law.html)
  + [Th&eacute;venin's theorem](thevenin_theorem.html)
  + [Norton's theorem](norton_theorem.html)
