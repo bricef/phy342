@@ -1,3 +1,5 @@
 capacitors
 ==========
 
+water analogy
+-------------
