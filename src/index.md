@@ -50,7 +50,7 @@ Component factsheets
  + [The Inductor](inductor.html)
  + [The Transistor](transistor.html)
  + [The Diode](diode.html)
- + [The LDR](ldr.html)
+ + [The LDR and The Thermistor](ldr_thermistor.html)
  + [The LED](led.html)
  + [The OpAmp](opamp.html)
  + [The 555 Timer](555.html)
