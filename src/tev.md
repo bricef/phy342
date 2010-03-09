@@ -1,4 +1,4 @@
-#`Th&eacute;venin's theorem
+#Th&eacute;venin's theorem
 
 This is an extension of Superposition theory. Thevenin's theory is particulary very useful when we are looking at circuits where load resistance is changing. This saves us time to analyse the new circuit when resistance is changed.
 
@@ -18,9 +18,9 @@ We will change this circuit leaving a constant voltage source, V, and a resistor
 
 If V and r are known we can see that any resistor connected to terminals A and B can be calculated very quickly. 
 
-How to simplify such a circuit.
+How to simplify such a circuit?
 
-First of all we conssider an open circuit with no load connected to its terminals.
+First of all we consider an open circuit with no load connected to its terminals.
 
 {@class=centre}
 ![Thevenin's Theorem](../resources/tev_3.jpg)
@@ -34,9 +34,11 @@ So our circuit simplyfies to
 {@class=centre}
 ![Thevenin's Theorem](../resources/tev_4.jpg)
 
-and again we can simplify our circuit even further
+and again we can simplify our circuit even further, where $R_t$ is given by
+
+$$R_t=R_p+R_2$$
 
 {@class=centre}
 ![Thevenin's Theorem](../resources/tev_5.jpg)
 
-$$R_t=R_p+R_2$$
+This $R_t$ remains constant, while the load can be changed. The voltage or current across new load can be calculated easily, as the rest of the circuit remains unchanged.
