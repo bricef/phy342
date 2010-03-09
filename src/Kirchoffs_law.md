@@ -15,7 +15,7 @@ LOOP - closed path that formed by connecting branches
 
 ##Kirchoff's Current Law
 
-The algebraic sum of all current in the node is equal to zero. In other words all current that arrives into the node is equal to the sum of current that leave the node.
+The algebraic sum of all current in the node is equal to zero. In other words the sum of all current that arrives into the node is equal to the sum of current that leaves the node.
 
 {@class=centre}
 ![Kirchoff's current law](../resources/kir_1.jpg) 

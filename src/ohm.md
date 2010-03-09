@@ -13,7 +13,9 @@ Simple circuit, that represents Ohm's Law
 ![Ohm's Law](../resources/ohm.jpg)
 
 so if the voltage across the component is V=220V and current that flows in this circuit 
-is I=2A then resistance of this component is $$R=\frac{220V}{2A}=110 \gama$$
+is I=2A then resistance of this component is 
+
+$$R=\frac{220V}{2A}=110 \gama$$
 
 The equation also can be rearranged to give Voltage (current) if other two parameters are known.
  

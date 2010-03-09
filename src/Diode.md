@@ -9,7 +9,5 @@ is connected (forward direction), and completely blocks the current if the direc
 {@class=centre}
 ![diode symbol](../resources/dio_sym.svg)
 
-##Water analogy
-
 
 Diodes has two thresholds. The first one has to be reached to make diode conduct (usualy very small, in region of 0.7V), If this voltage is not present, diode acts like insulator. The second threshold can be reached if a very large voltage is applied in reverse direction, which breaks the diode and makes it conduct.

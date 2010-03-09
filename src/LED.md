@@ -6,5 +6,5 @@ When the current flows through this diote, it converts some of it energy into ph
 ##Electrical symbol of LED
 
 {@class=centre}
-![LED symbol](../resources/LED_sym.png)
+![LED symbol](../resources/LED_sym.svg)
 
