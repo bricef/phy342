@@ -22,9 +22,11 @@ From the circuit above we can see that there is one resistor in series and anoth
 Total resistance of the circuit is given by 
 $$R_t=R_2+\frac{R_bR_3}{R_b+R_3}=4.83\gama$$
 
-The current through bulb ($R_b$) can be found using potential divider $$V_b=\frac{V}{R_t}R_p$$ 
+The current through bulb ($R_b$) can be found using potential divider 
 
-So $I_b=\frac{V_b}{R_b)$ 	and   $I_b=0.058A$ 
+$$V_b=\frac{V}{R_t}R_p$$ 
+
+So $I_b=\frac{V_b}{R_b)$ 	and   $I_b=0.058 A$ 
 
 Now lets consider different batery. Performing same simplifications our circuit becomes:
 
