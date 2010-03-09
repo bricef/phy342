@@ -31,7 +31,7 @@ Electronics: Principles
  + [Kirchoff's Laws](kirchoffs_law.html)
  + [Ohm's Law](ohm.html)
  + [Superposition theory](super.html)
- + [Th&eacute;venin's theorem](thevenin_theorem.html)
+ + [Th&eacute;venin's theorem](tev.html)
  + [Norton's theorem](norton_theorem.html)
 
 Digital electronics
