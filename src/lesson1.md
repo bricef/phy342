@@ -117,7 +117,12 @@ There's several new features here, so let's go through them. Firstly, you'll not
 {@class=question} How is $V_{out}$ governed by the values of R1 and R2? 
 
 {@class=answer} The voltage of Vout is governed by the values of R1 and R2 by the following equation.
-$$V_{out}=\frac{R_2}{R_1+R_2}\cdot V_{in}$$
+$$V_{out}=\frac{R_2}{R_1+R_2}\cdot V_{in}$$<br />
+To arrive at this, we start by using Ohm's law to see that
+$$V_{in}=(R_1+R_2)\cdot I_l$$
+Which we re-arrange for $I_l$ and substitute into another statement of Ohm's law
+$$V_{out}=\frac{I_l}{R_2}$$
+to give us our solution.
 
 {@class=question} If  
 
