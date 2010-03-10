@@ -39,7 +39,11 @@ margin: 0 auto;
 }
 
 img{
-max-width: 560px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 560px;
+    border:none;
 }
 
 h1,h2,h3,h4{
@@ -95,7 +99,7 @@ blockquote{
 }
 
 blockquote p{
-color: #555555;
+    color: #555555;
 }
 
 
@@ -121,6 +125,19 @@ margin-right: auto;
 vertical-align:middle;
 }
 
+.answer{
+    padding-left:0.25em;
+    padding-right:0.25em;
+    padding-top:2px;
+    padding-bottom:2px;
+    font-weight:bold;
+    color:#999;
+    background:#999;
+}
+.answer:hover {
+    color:white;
+}
+
 p.endnote{
 	font-size:small;
     text-align:center;
@@ -132,10 +149,6 @@ p.endnote{
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
-}
-
-#valid img{
-border:none;
 }
 
 .toctitle{
