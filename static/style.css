@@ -35,7 +35,8 @@ margin: 0 auto;
 	margin-left:20%;
 	*/
     z-index:-1;
-	margin-top:2em;
+	/*margin-top:2em;*/
+    text-align:justify;
 }
 
 img{
@@ -53,7 +54,7 @@ h1,h2,h3,h4{
 }
 
 h1{
-	margin-top:2em;
+	/*margin-top:2em;*/
 	text-align:center;
 	font-weight:bold;
 }
@@ -124,18 +125,51 @@ margin-left: auto;
 margin-right: auto;
 vertical-align:middle;
 }
-
-.answer{
-    padding-left:0.25em;
-    padding-right:0.25em;
-    padding-top:2px;
-    padding-bottom:2px;
+.question:before{
     font-weight:bold;
-    color:#999;
-    background:#999;
+    content: "Q: ";
 }
-.answer:hover {
-    color:white;
+.question{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0.25em;
+    padding:0.25em;
+    font-weight:normal;
+    background:#aca;
+    border:solid black 1px;
+}
+.answer:before{
+    font-weight:bold;
+    content: "A: ";
+}
+.answer{
+    margin-top:0.25em;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0.25em;
+    font-weight:normal;
+    color:#ccc;
+    background:#ccc;
+    border:solid black 1px;
+}
+.answer img{
+    display:none;
+}
+
+.answer:hover{
+    color:#000;
+}
+
+.answer:hover img.block{
+    display:block;
+    color:#000;
+}
+
+.answer:hover img.inline{
+    display:inline;
+    color:#000;
 }
 
 p.endnote{
@@ -149,6 +183,21 @@ p.endnote{
 	margin-left:auto;
 	margin-right:auto;
 	text-align:center;
+}
+
+.warning:before{
+    font-weight:bold;
+    content: "WARNING: ";
+}
+.warning{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0.25em;
+    border: solid red 1px;
+    color:red;
+    background:yellow;
+    
 }
 
 .toctitle{
