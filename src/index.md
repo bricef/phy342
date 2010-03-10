@@ -47,6 +47,7 @@ Component factsheets
 
  + [The Resistor](resistor.html)
  + [The Capacitor](capacitor.html)
+ + [The Cell Battery](battery.html)
  + [The Inductor](inductor.html)
  + [The Transistor](transistor.html)
  + [The Diode](diode.html)
@@ -92,6 +93,7 @@ Practical guides
 ----------------
  
  + [Some basic components to start with](components_basic.html)
+ + [The Breadboard](breadboard.html)
  + [Components for ambitious projects](components_ambitious.html)
  + [Prototyping circuits](proto_circuits.html)
  + [Soldering](soldering.html)
