@@ -7,7 +7,7 @@
 #
 ##
 
-import markdown
+import markdown as md
 import sys, os, re
 from PyMeld import Meld as meld
 
@@ -38,8 +38,6 @@ def prepLatexInline(matchobj):
 
 
 def convert(text):
-    # initialise markdown
-    md=markdown.Markdown(['footnotes','tables','toc(title=Table of Contents)','meta','codehilite'])
     raw_md=text
 
     ##
@@ -52,7 +50,8 @@ def convert(text):
     ##
     # once latex is parsed, convert md to html
     ##
-    main_html=md.convert(raw_md)
+    
+    main_html=md.markdown(raw_md, ['footnotes'])
 
     try:
         melded_wrapper=meld(open(TEMPLATE_LOC,"r").read())
