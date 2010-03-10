@@ -28,9 +28,9 @@ Electronics: Principles
 -----------------------
 
  + [The water analogy](water_analogy.html)
- + [Kirchoff's Laws](kirchoffs_law.html)
+ + [Kirchoff's Laws](kirchoffs.html)
  + [Ohm's Law](ohm.html)
- + [Superposition theory](super.html)
+ + [Superposition theory](superposition.html)
  + [Th&eacute;venin's theorem](tev.html)
  + [Norton's theorem](norton_theorem.html)
 
