@@ -10,75 +10,142 @@
 <body>
 <div id="topnav">PHY342: An Introduction to electronics</div>
 
-<div id="main"><h1 id="getting-comfortable">Getting comfortable</h1>
-<p>This first lesson will show how to make very simple circuits as well as measure the voltage, current and resistance.</p>
-<p>We will start with basics and it will get harder as we will go along.</p>
-<h2 id="making-measurements">Making measurements</h2>
-<p>To make measurements you will require multimeter, the one we are using is shown below</p>
+<div id="main"><h1>Getting comfortable</h1>
+<p>This first lesson will show how to make very simple circuits as well as measure the voltage, current and resistance.
+</p>
+<p>We will start with basics and it will get harder as we will go along.
+</p>
+
+<h2>Making measurements</h2>
+<p>To make measurements you will require multimeter, the one we are using is shown below
+</p>
 <p class="centre">
-<img alt="A multimeter" src="../resources/mult.jpg" /></p>
-<p>The provided manual should give a brief explanations on how to operate your multimeter. </p>
-<h3 id="measuring-voltage">Measuring voltage</h3>
-<p>To measure voltage the clips should be placed in parallel with the component that is to be measured. To find a voltage across resistor R the voltmeter should be placed as shown in picture.</p>
+   <img src="../resources/mult.jpg" alt="A multimeter"/>
+</p>
+<p>The provided manual should give a brief explanations on how to operate your multimeter. 
+</p>
+
+<h3>Measuring voltage</h3>
+<p>To measure voltage the clips should be placed in parallel with the component that is to be measured. To find a voltage across resistor R the voltmeter should be placed as shown in picture.
+</p>
 <p class="centre">
-<img alt="voltmeter" src="../resources/volt.jpg" /></p>
-<p>The reason voltmeter should be placed in parallel with the measured component is that the voltage remains the same in all components that are connected in parallel.</p>
-<h3 id="measuring-current">Measuring current</h3>
-<p>While the voltage is the same across all parallel components, the current isn't. However the current is the same in all components that are connected in series. Imagine current as flowing water. The ammount of water that flows inside the component will remain unchanged on its way out. </p>
-<p>Therefore the current measuring device - ampermeter, has to be placed in series with the component that is to be measured. Circuit below shows how ampermeter should be integrated into the circuit.</p>
+   <img src="../resources/volt.jpg" alt="voltmeter"/>
+</p>
+<p>The reason voltmeter should be placed in parallel with the measured component is that the voltage remains the same in all components that are connected in parallel.
+</p>
+
+<h3>Measuring current</h3>
+<p>While the voltage is the same across all parallel components, the current isn't. However the current is the same in all components that are connected in series. Imagine current as flowing water. The ammount of water that flows inside the component will remain unchanged on its way out. 
+</p>
+<p>Therefore the current measuring device - ampermeter, has to be placed in series with the component that is to be measured. Circuit below shows how ampermeter should be integrated into the circuit.
+</p>
 <p class="centre">
-<img alt="Ampermeter" src="../resources/amp.jpg" /></p>
-<h2 id="simple-electrical-circuits">Simple electrical circuits</h2>
-<p>We will start with very simply circuit that is shown below</p>
+   <img src="../resources/amp.jpg" alt="Ampermeter"/>
+</p>
+
+<h2>Simple electrical circuits</h2>
+<p>We will start with very simply circuit that is shown below
+</p>
 <p class="centre">
-<img alt="Circuit" src="../resources/cir1.jpg" /></p>
-<p>To make this circuit you will require</p>
+   <img src="../resources/cir1.jpg" alt="Circuit"/>
+</p>
+<p>To make this circuit you will require
+</p>
 <ul>
-<li>47 Ohms resistor (any value will do)</li>
-<li>5V voltage source</li>
-<li>Multimeter</li>
+ <li>
+     47 Ohms resistor (any value will do)
+ </li>
+
+ <li>
+     5V voltage source
+ </li>
+
+ <li>
+     Multimeter
+ </li>
 </ul>
-<p>Now try to connect this circuit, and measure the voltage across the resistor.</p>
-<p>Now try to perform a simple calculations and prove that measured voltage is the same as calculated. (Hint: use Ohm's Law)</p>
-<p>Now lets try to connect two resistors in series. You will require same equipment as before plus</p>
+<p>Now try to connect this circuit, and measure the voltage across the resistor.
+</p>
+<p>Now try to perform a simple calculations and prove that measured voltage is the same as calculated. (Hint: use Ohm's Law)
+</p>
+<p>Now lets try to connect two resistors in series. You will require same equipment as before plus
+</p>
 <ul>
-<li>148 kOhms Resistor</li>
+ <li>
+     148 kOhms Resistor
+ </li>
 </ul>
-<p>consider the circuit below</p>
+<p>consider the circuit below
+</p>
 <p class="centre">
-<img alt="circuit" src="../resources/cir2.jpg" /></p>
-<p>Now using Ohm's Law calculate voltages across both resistors. You can use potential divider or just remember the fact that current remains the same in all components that are connected in series.</p>
-<p>If you performed your calculations correctly you should get <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_1=4.99 V"></img> and <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_2=1.6 mV"></img> (these values are valid only for these resistors)</p>
-<p>Now try to verify your calculations by measurement.</p>
-<p>Next circuit will give an understanding of total resistance when resistors are connected in parallel.</p>
+   <img src="../resources/cir2.jpg" alt="circuit"/>
+</p>
+<p>Now using Ohm's Law calculate voltages across both resistors. You can use potential divider or just remember the fact that current remains the same in all components that are connected in series.
+</p>
+<p>If you performed your calculations correctly you should get <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_1=4.99 V"></img> and <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_2=1.6 mV"></img> (these values are valid only for these resistors)
+</p>
+<p>Now try to verify your calculations by measurement.
+</p>
+<p>Next circuit will give an understanding of total resistance when resistors are connected in parallel.
+</p>
 <p class="centre">
-<img alt="circuit" src="../resources/cir3.jpg" /></p>
-<p>This time we know that voltage across parallel components is the same. Verify it by connecting circuit above and measuring voltage of both resistors.</p>
-<p>We know that current will not be the same in parallel components. First try to calculate the expected current value through every resistor.</p>
-<p>This is the values you should obtain: <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_1=106 mA"></img> and <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_2=0.034 mA"></img></p>
-<p>Now try to integrate your ampermeter into the circuit and verify your results.</p>
-<p>The next circuit will contain resistors in parallel and in series. Consider circuit bellow and try to find voltage and current passing through every resistor, then verify your results with measurements.</p>
+   <img src="../resources/cir3.jpg" alt="circuit"/>
+</p>
+<p>This time we know that voltage across parallel components is the same. Verify it by connecting circuit above and measuring voltage of both resistors.
+</p>
+<p>We know that current will not be the same in parallel components. First try to calculate the expected current value through every resistor.
+</p>
+<p>This is the values you should obtain: <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_1=106 mA"></img> and <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_2=0.034 mA"></img>
+</p>
+<p>Now try to integrate your ampermeter into the circuit and verify your results.
+</p>
+<p>The next circuit will contain resistors in parallel and in series. Consider circuit bellow and try to find voltage and current passing through every resistor, then verify your results with measurements.
+</p>
 <p class="centre">
-<img alt="circuit" src="../resources/cir4.jpg" /></p>
-<p>if you used components that are shown in the picture above you should obtain the folowing values:</p>
-<p><img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_1=60 mA"></img>  <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_1=2.84 V"></img> <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_2=45 mA"></img>  <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_2=2.15 V"></img> <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_3=14 mA"></img>  <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_3=2.15 V"></img></p>
-<h2 id="rc-circuits">RC - circuits</h2>
-<p>RC circuits involves two components - resistors (R) and capacitors (C)</p>
-<p>The math that is involved calculating resistance, voltage and current is more complicated than the one we used previously and therefore will not be considered in this lesson. We will show the effect of having capacitors in the circuit. Also we will observe their behaviour when connected to the voltage supply.</p>
-<p>Build the following circuit, and connect your voltmeter across the capacitor.</p>
+   <img src="../resources/cir4.jpg" alt="circuit"/>
+</p>
+<p>if you used components that are shown in the picture above you should obtain the folowing values:
+</p>
+<p><img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_1=60 mA"></img>  <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_1=2.84 V"></img> <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_2=45 mA"></img>  <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_2=2.15 V"></img> <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_3=14 mA"></img>  <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_3=2.15 V"></img>
+</p>
+
+<h2>RC - circuits</h2>
+<p>RC circuits involves two components - resistors (R) and capacitors (C)
+</p>
+<p>The math that is involved calculating resistance, voltage and current is more complicated than the one we used previously and therefore will not be considered in this lesson. We will show the effect of having capacitors in the circuit. Also we will observe their behaviour when connected to the voltage supply.
+</p>
+<p>Build the following circuit, and connect your voltmeter across the capacitor.
+</p>
 <p class="centre">
-<img alt="circuit" src="../resources/cir5.jpg" /></p>
-<p>You will need:</p>
+   <img src="../resources/cir5.jpg" alt="circuit"/>
+</p>
+<p>You will need:
+</p>
 <ul>
-<li>2.2 mF Capacitor (any value will do but the bigger the better)</li>
-<li>147 kgama Resistor</li>
-<li>Voltmeter</li>
-<li>Switch</li>
+ <li>
+     2.2 mF Capacitor (any value will do but the bigger the better)
+ </li>
+
+ <li>
+     147 kgama Resistor
+ </li>
+
+ <li>
+     Voltmeter
+ </li>
+
+ <li>
+     Switch
+ </li>
 </ul>
-<p>Put switch to "on" position and observe the voltmeter. It should show the same voltage as your source. Now put switch into "off" position and observe your voltmeter.</p>
-<p>Have you noticed that voltage "died" gradually. Try to replace resistor with higher resistance, and you notice that this time capacitor "dies" even slower.</p>
-<p>When the switch was on, the voltage charged capacitor and when it was put to "off" position capacitor discharged its charge through resistor. The bigger resistance the slower discharge rate.</p>
-<p>If you feel comfortable with everything that is described in this lesson you should follow to <a href="lesson2.html">next lesson</a> </p></div>
+<p>Put switch to "on" position and observe the voltmeter. It should show the same voltage as your source. Now put switch into "off" position and observe your voltmeter.
+</p>
+<p>Have you noticed that voltage "died" gradually. Try to replace resistor with higher resistance, and you notice that this time capacitor "dies" even slower.
+</p>
+<p>When the switch was on, the voltage charged capacitor and when it was put to "off" position capacitor discharged its charge through resistor. The bigger resistance the slower discharge rate.
+</p>
+<p>If you feel comfortable with everything that is described in this lesson you should follow to <a href="lesson2.html">next lesson</a> 
+</p></div>
 
 <div id="valid">
     <a href="http://validator.w3.org/check?uri=referer">
