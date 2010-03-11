@@ -18,7 +18,7 @@ Lessons
 7. [A Simple Radio](lesson7.html)
 8. [Amplifiers](lesson8.html)
 9. [The Digital Telephone](lesson9.html)
-10. [Revisiting the Radio 2](lesson10.html)
+10. [Revisiting the Radio](lesson10.html)
 
 We also keep some [educator resources](educator_lessons.html) such as costed component lists, marking checklist, lesson plans, etc.
 
