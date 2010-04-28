@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title id="title">An Introduction to Electronics</title>
+<link rel="stylesheet" type="text/css" href="../static/style.css"/>
+<link rel="stylesheet" type="text/css" href="../static/code-color.css"/>
+</head>
+<body>
+<!---
+<div id="topnav">PHY342: An Introduction to electronics</div>
+--->
+<div id="main"><h1>Fun with LEDs</h1>
+<h2>What you'll learn</h2>
+<ul>
+<li>Build a circuit that emits a light through LED</li>
+<li>Build a circuit that flashes using just LED and RC components</li>
+<li>Build a circuit that produces a sound through a buzzer</li>
+<li>Build a liitle device that will make a sound with variable frequency</li>
+<li>Build a circuit that shows electric motor in action</li>
+</ul>
+<h2>What you'll need</h2>
+<ul>
+<li>1 LED (any color)</li>
+<li>1 capacitor 1uF</li>
+<li>1 PNP resistor</li>
+<li>1 NPN resistor</li>
+<li>5 resistors (1 M<img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?%5COmega"></img> OTHER VALUES) </li>
+</ul>
+<h2>LED circuits</h2>
+<p>To observe Light Emiting Diode in action you will build a very basic electric circuit that will show the use of LEDs. First build a circuit that is shown below:</p>
+<p><img alt="LED" src="../resources/pic1.jpg" /></p>
+<p>Once connected to the VOLTAGE V batery <a href="led.html">LED</a> emmits photons that can be detected by the eye. But if you remmeber it was mentioned that LED is just a specific type of a <a href="diode.html">Diode</a>. To explore its properties as a diode you will require to build a folowing circuit.</p>
+<p><img alt="LED" src="../resources/pic3.jpg" /></p>
+<p>To observe the properties of a diode let's connect it to 3 V batery or DC signal generator. You will notice that only one of the LEDs emmits light. Now let's reverse the polarity of your batery or signal generator. You probably have noticed that now the LED that was emiting light before now is switched off, while the other one is on.</p>
+<p><img alt="LED" src="../resources/pic2.jpg" /></p>
+<p>The circuit above connected to a low frequency AC siganl generator (NOTE: the batery is not suitable as it produces DC voltage). If the frequency is low enough LED should be flashing. If the frequency is increased the flash rate will increase too. Now try to generate a signal with a frequency of FREQUENCY Hz. It appears that LEDs is lit up constantly, but thats not exactly correct. LED is still flashing, just the frequency is too high for humans eye to detect this flash.</p>
+<p>Now we will introduce a <a href="capacitor.html">Capacitor</a> to show the effect of delayed flash. It is known that capacitor can store a charge which can be reliesed through resistor. Build the folowing circuit to observe its behaviour. (Tip: switch circuit on and off and observe the behaviour of LED)</p>
+<p><img alt="LED" src="../resources/pic9.jpg" /></p>
+<p>From the circuit above it can be seen that when the switch is on it charges the capacitor as well as emits light through LED. But when the switch is switched off, LED doesn't die straight away. It still keeps emiting light after some time after the circuit was unpluged. Now lets change the resistor with the one that has R=OHMS Ohms. Switch circuit on for a few seconds and then switch it off. </p>
+<p>Have you noticed that the time it took for LED to die was much longer than using resistor with smaller resistance. The <a href="water_analogy.html">water analogy</a> would be straight forward. Imagine having a tank full of water with a plug that would have some sort of mechanical resistance. It is quite obvious that the bigger resistance the more time required for the tank to empty. </p>
+<p>For the next circuit you will require to familirise yourself with the basic principles of <a href="transistor.html">transistors</a>. The transistors we will be using are bipolar PNP and NPN and the main purpose for it just to act as an electronic switch. </p>
+<p>An example with flashin LED required AC voltage with variable frequency in order to observe these flashes. Using a combination of transistor and capacitor we can build a circuit that will make LED flash even using a direct current (DC). Build the circuit that is shown below.</p>
+<p><img alt="LED" src="../resources/pic4.jpg" /></p>
+<p>Once this circuit is connected to VOLTS V batery you can see that LED flashes. The rate can be defined by changing resistances as well as capacitance of capacitor. The folowing table has a few examples for you to try out. </p>
+<p><img alt="table" src="../resources/tbl1.jpg" /></p>
+<h2>Buzzer circuits</h2>
+<p>Now lets play with the sound. You will require a buzzer and a push switch. Try to connect the circuit below.</p>
+<p><img alt="table" src="../resources/pic8.jpg" /></p>
+<p>When the switch pushed you can hear the sound. The use if this circuit is quite obvious - just fit it in the small box, connect a batery and mount it on your doors. That's a perfect door bell. </p>
+<p>We can build similar circuits to those used previously with LEDs and just adjust the resistor values and swap LED with a buzzer. Build a folowing circuit to explore behaviour of a buzzer connected with capacitor.</p>
+<p>PICTURE 7 (capacitor decay with high resistance) PIC3</p>
+<p>Press the switch, you will hear sound, but even after releasing the switch, the sound still can be heard. Similary playing with the circuits that were used for LEDs we can make the ones that have buzzers instead. </p>
+<p>Combining LED and buzzer in one circuit can be very fun. Try to build a folowing circuit and explore its behaviour.</p>
+<p><img alt="table" src="../resources/pic7.jpg" /></p>
+<h1>CHECK THE VALUES for above picture</h1>
+<h2>Electric motor circuits</h2>
+<p>Now let's move on from the light and sound to the movement. <a href="http://en.wikipedia.org/wiki/Electric_motor">Electric motor</a> is a device that converts electric energy to mechanical energy. The flowing charge experience a force if placed in magnetic field. We will build a few circuits that will allow you to play with the electric motors. Then we will integrate them in the circuits that were built previously and explore aplications where such a circuits could be used.</p>
+<p>We will start with very basic circuit that will show electric motor in action.</p>
+<p><img alt="motor" src="../resources/pic5.jpg" /></p>
+<p>When switch is on you can notice that the motor starts to raotate. You could increaese the voltage and observe the speed of rotation of the motor. NOTE Do not put very high voltages as it can permanently damage the motor. </p>
+<p>Now lets consider a circuit that we used to flash our LED. and replace LED with a motor. The diagram for this circuit is provided below.</p>
+<p><img alt="motor" src="../resources/pic6.jpg" /></p>
+<p>When the swith is put to on position we can see that motor switches itself on and of at a constant rate of time. </p>
+<p>In the next lesson we will talk about the circuits that are used to "sense the universe". We will be using the surrounding as a trigger that will switch on or off our circuits. Now when you know all the basics of circuits that can produce an output in a form of light, sound and movement, you can move to the <a href="lesson3.html">next lesson</a> to sense the universe.</p></div>
+
+<div id="valid">
+    <a href="http://validator.w3.org/check?uri=referer">
+	<img
+        src="http://www.w3.org/Icons/valid-xhtml10-blue"
+        alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+	
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img 
+		style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!"/></a>
+	
+	<a href="http://www.anybrowser.org/campaign/">
+	<img
+		src="../static/valid_br.png"
+        alt="Viewable in any browser"/>
+    </a>
+</div>
+<!--
+<p class="endnote">
+    This work is licenced under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Licence</a>.
+</p>-->
+
+</body>
+</html>
+
