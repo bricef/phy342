@@ -22,47 +22,78 @@
 </ul>
 <h2>What you'll need</h2>
 <ul>
-<li>1 LED (any color)</li>
-<li>1 capacitor 1uF</li>
-<li>1 PNP resistor</li>
-<li>1 NPN resistor</li>
-<li>5 resistors (1 M<img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?%5COmega"></img> OTHER VALUES) </li>
+<li>2 LEDs - red and yellow</li>
+<li>2 capacitors polirised 1uF and 2.2mF</li>
+<li>1 PNP <a href="pnpresistor">transistor</a></li>
+<li>1 NPN <a href="NPNresistor">transistor</a></li>
+<li>4 resistors (470 Ohm, 5kohm, 10kohm, 10 Mohm) </li>
+<li>Stepper motor: Unipolar, four-phase, 12-volt. Parallax 27964 or similar.</li>
 </ul>
+<h2>Circuit simulation</h2>
+<p>Most of the circuits used in this lesson will have a link into applet, which will simulate the circuit. You are free to play arround with it by changing some values and observing the behaviour. This applet will allow you to simulate circuits and can be very useful if you will decide to build your own and want to test it by building a theoretical model.</p>
+<p>The link to this applet can be found <a href="http://www.falstad.com/circuit/">here</a>.</p>
 <h2>LED circuits</h2>
-<p>To observe Light Emiting Diode in action you will build a very basic electric circuit that will show the use of LEDs. First build a circuit that is shown below:</p>
-<p><img alt="LED" src="../resources/pic1.jpg" /></p>
-<p>Once connected to the VOLTAGE V batery <a href="led.html">LED</a> emmits photons that can be detected by the eye. But if you remmeber it was mentioned that LED is just a specific type of a <a href="diode.html">Diode</a>. To explore its properties as a diode you will require to build a folowing circuit.</p>
+<p>To observe Light Emitting Diode in action you will build a very basic electric circuit that will show the use of LEDs. First build a circuit that is shown below:</p>
+<p><img alt="LED" src="../resources/pic1.jpg" /> </p>
+<p>Once connected to the 5 V battery <a href="led.html">LED</a> emits photons that can be detected by your eye. But if you remeber it was mentioned that LED is just a specific type of a <a href="diode.html">Diode</a>. To explore its properties as a diode you will be required to build a following circuit. </p>
+<p>The simulated circuit can be found <a href="APPLET">here</a>.</p>
+<p class="question"> What is the maximum current that can flow through standart red LED before it burns?</p>
+<p class="answer"> 30 mA or arround 1.7-2.0 V </p>
+<p class="question"> What is the maximum voltage that can be applied to the circuit above with resistor values R = 470 ohm ?</p>
+<p class="answer"> <img alt="equation" class="block" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?R=(V_{s}-V_{L})/I"></img><br />
+rearrangin this equation for <img alt="equation" class="block" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_{s}"></img> gives us: 
+<img alt="equation" class="block" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_{s}=I(R+%5Cfrac{V_{L}}{I})"></img> 
+<br><img alt="equation" class="block" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_{s}=0.03(470+%5Cfrac{2}{0.03})=16.1 V"></img></br>
+where <img alt="equation" class="block" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_{s} and V_{L}"></img> <br>are supply voltage and threshold voltage of LED respectively.<br/></p>
+<p>The circuit below will combine two properties of LED - as a diode and as light emmiter. Build the circuit bellow.</p>
 <p><img alt="LED" src="../resources/pic3.jpg" /></p>
-<p>To observe the properties of a diode let's connect it to 3 V batery or DC signal generator. You will notice that only one of the LEDs emmits light. Now let's reverse the polarity of your batery or signal generator. You probably have noticed that now the LED that was emiting light before now is switched off, while the other one is on.</p>
+<p>To observe the properties of a diode let's connect it to 3 V battery or DC signal generator. You will notice that only one of the LEDs emits light. Now let's flick the switch. You probably have noticed that now the LED that was emitting light before now is switched off, while the other one is on.(</p>
+<p>The same circuit was built in applet to show its theoretical behaviour. The switch was used as a tool that would change the polarity of a battery. The simulated circuit can be found <a href="APPLET">here</a>.</p>
+<p class="question"> Would you still observe light if DC power supply swapped with AC ? Prove it by simulating this circuit in applet.</p>
+<p class="answer"> Yes. You would notice both LEDs flashing if the frequency is low enough (~2HZ). Also remember to add resistors to avoid damaging LEDs. The applet simulation can be found <a href="appletsimulation">here</a>. </p>
+<p>If you managed to build this circuit in applet there should be nothing that would stop you from building this circuit in reality. The diagram is shown bellow. Try to replicate it and connect to AC power source with very small frequency.</p>
 <p><img alt="LED" src="../resources/pic2.jpg" /></p>
-<p>The circuit above connected to a low frequency AC siganl generator (NOTE: the batery is not suitable as it produces DC voltage). If the frequency is low enough LED should be flashing. If the frequency is increased the flash rate will increase too. Now try to generate a signal with a frequency of FREQUENCY Hz. It appears that LEDs is lit up constantly, but thats not exactly correct. LED is still flashing, just the frequency is too high for humans eye to detect this flash.</p>
-<p>Now we will introduce a <a href="capacitor.html">Capacitor</a> to show the effect of delayed flash. It is known that capacitor can store a charge which can be reliesed through resistor. Build the folowing circuit to observe its behaviour. (Tip: switch circuit on and off and observe the behaviour of LED)</p>
+<p>The circuit above connected to a low frequency AC signal generator (NOTE: the battery is not suitable as it produces DC voltage). If the frequency is low enough (try 0.1 Hz and increase it gradually to 10 Hz) LED should be flashing. If the frequency is increased the flash rate will increase too. Now try to generate a signal with a frequency of 50 Hz. It appears that LED is lit up constantly, but that's not exactly correct. LED is still flashing, just the frequency is too high for human eye to notice.</p>
+<h3>RC and LED circuits</h3>
+<p>Now we will introduce a <a href="capacitor.html">Capacitor</a> to show the effect of delayed flash. It is known that capacitor can store a charge which can be released through resistor. Build the following circuit to observe its behaviour. (Tip: switch circuit on and off and observe the behaviour of LED)</p>
 <p><img alt="LED" src="../resources/pic9.jpg" /></p>
-<p>From the circuit above it can be seen that when the switch is on it charges the capacitor as well as emits light through LED. But when the switch is switched off, LED doesn't die straight away. It still keeps emiting light after some time after the circuit was unpluged. Now lets change the resistor with the one that has R=OHMS Ohms. Switch circuit on for a few seconds and then switch it off. </p>
-<p>Have you noticed that the time it took for LED to die was much longer than using resistor with smaller resistance. The <a href="water_analogy.html">water analogy</a> would be straight forward. Imagine having a tank full of water with a plug that would have some sort of mechanical resistance. It is quite obvious that the bigger resistance the more time required for the tank to empty. </p>
-<p>For the next circuit you will require to familirise yourself with the basic principles of <a href="transistor.html">transistors</a>. The transistors we will be using are bipolar PNP and NPN and the main purpose for it just to act as an electronic switch. </p>
-<p>An example with flashin LED required AC voltage with variable frequency in order to observe these flashes. Using a combination of transistor and capacitor we can build a circuit that will make LED flash even using a direct current (DC). Build the circuit that is shown below.</p>
-<p><img alt="LED" src="../resources/pic4.jpg" /></p>
-<p>Once this circuit is connected to VOLTS V batery you can see that LED flashes. The rate can be defined by changing resistances as well as capacitance of capacitor. The folowing table has a few examples for you to try out. </p>
+<p>From the circuit above it can be seen that when the switch is on it charges the capacitor as well as emits light through LED. But when the switch is switched off, LED doesn't die straight away. It still keeps emitting light after some time after the circuit was unplugged. </p>
+<p>Every RC circuit (circuits that are made of resistors and capacitors) has a time constant. This time constant determines the time that takes the capacitor to discharge to 37% of its initial voltage. 
+Now let's change the resistor with the one that has R=OHMS Ohms. Switch circuit on for a few seconds and then switch it off. </p>
+<p>Have you noticed that the time it took for LED to die was much longer than using resistor with smaller resistance? The <a href="water_analogy.html">water analogy</a> would be straight forward. Imagine having a tank full of water with a plug that would have some sort of mechanical resistance. It is quite obvious that the bigger resistance the more time required for the tank to empty. </p>
+<p>When the switch is on the capacitor is beeing charged. But when the switch is put to off position the capacitor acts as a power source and discharge its charge through resistor and LED. That's why we see this delay.</p>
+<p>The circuit simulation for this particular circuit can be found <a href="Applet">here</a>.</p>
+<p>For the next circuit you will require to familiarise yourself with the basic principles of <a href="transistor.html">transistors</a>. The transistors we will be using are bipolar PNP and NPN and the main purpose for it just to act as an electronic switch. </p>
+<p>An example with flashing LED required AC voltage with variable frequency in order to observe these flashes. Using a combination of transistor and capacitor we can build a circuit that will make LED flash even using a direct current (DC). Build the circuit that is shown below. </p>
+<p>Note the position of capacitor and transistors. If you will be using transistors that are shown in the diagram below take extra care connected them. The fact sheets for the transistors used in this circuit can be found <a href="factsheets">here</a>.</p>
+<p><img alt="LED" src="../resources/flash2.gif" /></p>
+<h1>NEEDS explanation how everything works.</h1>
+<p>Once this circuit is connected to 12 V battery you can see that LED flashes. The rate can be defined by changing resistances as well as capacitance of capacitor. The following table has a few examples for you to try out. </p>
 <p><img alt="table" src="../resources/tbl1.jpg" /></p>
 <h2>Buzzer circuits</h2>
-<p>Now lets play with the sound. You will require a buzzer and a push switch. Try to connect the circuit below.</p>
+<p>Now let's play with the sound. You will require a buzzer and a push switch. Try to connect the circuit below.</p>
 <p><img alt="table" src="../resources/pic8.jpg" /></p>
-<p>When the switch pushed you can hear the sound. The use if this circuit is quite obvious - just fit it in the small box, connect a batery and mount it on your doors. That's a perfect door bell. </p>
-<p>We can build similar circuits to those used previously with LEDs and just adjust the resistor values and swap LED with a buzzer. Build a folowing circuit to explore behaviour of a buzzer connected with capacitor.</p>
-<p>PICTURE 7 (capacitor decay with high resistance) PIC3</p>
-<p>Press the switch, you will hear sound, but even after releasing the switch, the sound still can be heard. Similary playing with the circuits that were used for LEDs we can make the ones that have buzzers instead. </p>
-<p>Combining LED and buzzer in one circuit can be very fun. Try to build a folowing circuit and explore its behaviour.</p>
+<p>When the switch pushed you can hear the sound. The use of this circuit is quite obvious - just fit it in the small box, connect a battery and mount it on your doors. That's a perfect door bell. </p>
+<p>We can build similar circuits to those used previously with LEDs and just adjust the resistor values and swap LED with a buzzer. Build a following circuit to explore behaviour of a buzzer connected with capacitor.</p>
+<p><img alt="table" src="../resources/pic10.jpg" /></p>
+<p>Press the switch, you will hear sound, but even after releasing the switch, the sound still can be heard. Similarly playing with the circuits that were used for LEDs we can make the ones that have buzzers instead. </p>
+<p>Combining LED and buzzer in one circuit can be very fun. Try to build a following circuit and explore its behaviour.</p>
 <p><img alt="table" src="../resources/pic7.jpg" /></p>
-<h1>CHECK THE VALUES for above picture</h1>
+<p>This circuit makes sound when the pushswitch is pressed. When switch is released all current goes to the other branch and you can observe the light that is emmited through LED. </p>
 <h2>Electric motor circuits</h2>
-<p>Now let's move on from the light and sound to the movement. <a href="http://en.wikipedia.org/wiki/Electric_motor">Electric motor</a> is a device that converts electric energy to mechanical energy. The flowing charge experience a force if placed in magnetic field. We will build a few circuits that will allow you to play with the electric motors. Then we will integrate them in the circuits that were built previously and explore aplications where such a circuits could be used.</p>
-<p>We will start with very basic circuit that will show electric motor in action.</p>
-<p><img alt="motor" src="../resources/pic5.jpg" /></p>
-<p>When switch is on you can notice that the motor starts to raotate. You could increaese the voltage and observe the speed of rotation of the motor. NOTE Do not put very high voltages as it can permanently damage the motor. </p>
-<p>Now lets consider a circuit that we used to flash our LED. and replace LED with a motor. The diagram for this circuit is provided below.</p>
-<p><img alt="motor" src="../resources/pic6.jpg" /></p>
-<p>When the swith is put to on position we can see that motor switches itself on and of at a constant rate of time. </p>
+<p>Now let's move on from the light and sound to the movement. <a href="http://en.wikipedia.org/wiki/Electric_motor">Electric motor</a> is a device that converts electric energy to mechanical energy. The flowing charge experiences a force if placed in magnetic field. We will build a few circuits that will allow you to play with the electric motors. Then we will integrate them in the circuits that were built previously and explore applications where such a circuits could be used.</p>
+<p>A unipolar, four-phase, 12 V motor was specified because it is a very common type. A picture of typical motor is shown below.</p>
+<p><img alt="motor" src="../resources/motor2.jpg" /></p>
+<p>If you are unable to find this specific type of motor, any other with similar specification will be as useful. "Unipolar" means that you don't have to swotch the power supply from positive to negative and then again to positive to run the motor. Four-phase means that the pulses that run the motor must be applied in sequence to four separate wires.</p>
+<p>We will start with very basic circuit that will show electric motor in action. The motor will be connected to the power supply directly to explore its behaviour. Most likely the motor will have five wires which are already stripped and are ready to be inserted into holes of the breadboard. Connect the motor as shown in the picture bellow.</p>
+<p><img alt="motor" src="../resources/motor1.jpg" /></p>
+<p>Chech the data sheet for your motor; you should find that four of the wires are used to supply power power to the motor and turn it in steps, while the fifth wire is known as common connection. This common connection should be connected to the positive side of the power supply, while the negative voltage is applied to the other four wires. If you are using the motor specified previously the data sheet can be found <a href="../resources/motor.pdf">here</a>.</p>
+<p>The data sheet will tell you in what sequence the voltage should be applied to the wires. This can be figured out by trial and error, but remember to apply the correct voltage to prevent damaging the motor.</p>
+<p>To see what motor is doing attach the duct tape to the end of the shaft. Then apply voltage to wires, one at a time, by moving negative wire from one wire to the other. You should observe shaft turning in little steps.</p>
+<p>Inside the motor are coils and magnets, but they function differently from those that are in DC motor. The simplyfied configuration of the stepper motor is shown in the picture below.</p>
+<p><img alt="motor" src="../resources/motor3.jpg" /></p>
+<p>Every time power is applied to the wire a certain coil is activated and move the motor by one step. This simplyfied model is good enough to get rough idea of whats going on inside this motor. The more detailed explanation whats going on inside stepper motor can be found <a href="motor">MOTOR LINK + EXPLANATION</a>.</p>
+<p class="warning">Do not leave battery connected to the motors if you do not intend to drive it. Stepper motors, unlike the DC motors, uses power even, when they are switched off. If the battery is left - the charge wount last too long!</p>
 <p>In the next lesson we will talk about the circuits that are used to "sense the universe". We will be using the surrounding as a trigger that will switch on or off our circuits. Now when you know all the basics of circuits that can produce an output in a form of light, sound and movement, you can move to the <a href="lesson3.html">next lesson</a> to sense the universe.</p></div>
 
 <div id="valid">
