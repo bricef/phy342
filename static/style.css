@@ -215,3 +215,6 @@ p.endnote{
 	font-weight:bold;
 	font-size:1.5em;
 }
+#valid a img{
+    display:inline;
+}

@@ -21,6 +21,9 @@ Resitors in series
 ------------------
 $$R_{tot}=R_1+R_2+...+R_n$$
 
+Variable resistors
+------------------
+
 {@id=colorcode}
 The Color Code
 --------------

@@ -9,18 +9,19 @@ If you want to get a feel for where this will take you, have a look at the later
 Lessons
 -------
 
+###Starting out
 1. [Getting comfortable](lesson1.html)
 2. [Fun with LEDs](lesson2.html)
 3. [Sensing your world](lesson3.html)
-4. [An Optical Telephone](lesson4.html)
-5. [A light following robot](lesson5.html)
+4. [A light following robot](lesson5.html)
+5. [An Optical Telephone](lesson4.html)
+### Building on
 6. [Filters](lesson6.html)
 7. [A Simple Radio](lesson7.html)
 8. [Amplifiers](lesson8.html)
+###A digital World
 9. [The Digital Telephone](lesson9.html)
 10. [Revisiting the Radio](lesson10.html)
-
-We also keep some [educator resources](educator_lessons.html) such as costed component lists, marking checklist, lesson plans, etc.
 
 Electronics: Principles
 -----------------------
@@ -31,14 +32,6 @@ Electronics: Principles
  + [Superposition theory](superposition.html)
  + [Th&eacute;venin's theorem](tev.html)
  + [Norton's theorem](norton_theorem.html)
-
-Digital electronics
--------------------
-
- + [Basic Logic](basic_logic.html)
- + [Combinatory Logic](combinatory_logic.html)
- + [Understanding Timing Diagrams](timing_diagrams.html)
- + [Pulse width modulation](pwm.html)
 
 Component factsheets
 --------------------
@@ -56,6 +49,22 @@ Component factsheets
  + [The bistable latch](bistable_latch.html)
  + [The shift register](shift_register.html)
 
+
+Miscallenous
+------------
+ + [Other Resources](resources.html)
+ + [Acknowledgements](acknowledgements.html)
+
+
+<!--
+
+Digital electronics
+-------------------
+
+ + [Basic Logic](basic_logic.html)
+ + [Combinatory Logic](combinatory_logic.html)
+ + [Understanding Timing Diagrams](timing_diagrams.html)
+ + [Pulse width modulation](pwm.html)
 
 Circuits factsheets
 -------------------
@@ -108,7 +117,9 @@ Miscellaneous
  + [Math primer](math_primer.html)
  + [Statement of intent](intent.html)
  + [Who are we](who.html)
- + [Other Resources](resources.html)
- + [Acknowledgements](acknowledgements.html)
  + [Friendly Glossary of terms](glossary.html)
  + [Going further](further.html)
+ 
+ We also keep some [educator resources](educator_lessons.html) such as costed component lists, marking checklist, lesson plans, etc.
+
+-->

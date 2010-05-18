@@ -76,3 +76,5 @@
 [Acknowledgements](acknowledgements.html)
 [Friendly Glossary of terms](glossary.html)
 [Going further](further.html)
+x motor stuff(what)
+x digital dice lesson2

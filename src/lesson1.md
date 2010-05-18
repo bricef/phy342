@@ -112,7 +112,7 @@ This is actually a special case of a _potential divider_. A potential divider ta
 
 There's several new features here, so let's go through them. Firstly, you'll notice that this diagram lacks the symbol for a battery. Instead, we have what are called rails. These are the terminals labeled with a voltage. We use rails instead of batteries because in practise, it matters little if our circuit is driven from a battery or from a power pack. In the diagram, we have a nine volt and a zero volt rail, which would be equivalent to a 9 volt battery. Secondly, the ground rail is _grounded_. This is represented by the symbol made of three parallel horizontal lines, and means that the 0V rail is attached to the earth in some way. The earth acts as a very large current sink, and effectively has a voltage of 0V. 
 
-{@class=warning}The earth from a mains cable is not suitable for this purpose. It is very dangerous to use household mains earth because if the installation or an appliance has a fault, you risk electrocution. In some cases, household earth is connected to your water pipe, and even if your own installation is perfect, the earth wire may carry a current from your neighbour's faulty installation! Most small electronics project _will not_ need to be earthed, and the 0V rail is suitably provided by a battery. An ideal earth is a large metal spike planted into the ground away from electrical cabling. A large metal desk will also work well for small battery-powered electronics project during testing should they really need to be earthed.
+{@class=warning}The earth from a mains cable is not suitable for this purpose. It is very dangerous to use household mains earth. If the installation or an appliance has a fault, you risk electrocution. In some cases, household earth is connected to your water pipe, and even if your own installation is perfect, the earth wire may carry a current from your neighbour's faulty installation! Most small electronics project _will not_ need to be earthed, and the 0V rail is suitably provided by a battery. An ideal earth is a large metal spike planted into the ground away from electrical cabling. A large metal desk will also work well for small battery-powered electronics project during testing should they really need to be earthed.
 
 {@class=question} How is $V_{out}$ governed by the values of R1 and R2? 
 
@@ -186,15 +186,15 @@ To make this circuit you will require
  + 47 Ohms resistor (any value will do)
  + 5V voltage source
  + Multimeter
-	
+    
 Now try to connect this circuit, and measure the voltage across the resistor.
-	
+    
 Now try to perform a simple calculations and prove that measured voltage is the same as calculated. (Hint: use Ohm's Law)
-	
+    
 Now lets try to connect two resistors in series. You will require same equipment as before plus
-	
+    
  + 148 kOhms Resistor
-	
+    
 consider the circuit below
 
 {@class=centre}
@@ -244,7 +244,7 @@ You will need:
  + 147 kOhms Resistor
  + Voltmeter
  + Switch
-	
+    
 Put switch to "on" position and observe the voltmeter. It should show the same voltage as your source. Now put switch into "off" position and observe your voltmeter.
 
 Have you noticed that voltage "died" gradually. Try to replace resistor with higher resistance, and you notice that this time capacitor "dies" even slower.
