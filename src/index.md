@@ -9,12 +9,13 @@ If you want to get a feel for where this will take you, have a look at the later
 Lessons
 -------
 
-###Starting out
 1. [Getting comfortable](lesson1.html)
 2. [Fun with LEDs](lesson2.html)
 3. [Sensing your world](lesson3.html)
-4. [A light following robot](lesson5.html)
-5. [An Optical Telephone](lesson4.html)
+4. [A light following robot](lesson4.html)
+5. [An Optical Telephone](lesson5.html)
+
+<!--
 ### Building on
 6. [Filters](lesson6.html)
 7. [A Simple Radio](lesson7.html)
@@ -22,16 +23,17 @@ Lessons
 ###A digital World
 9. [The Digital Telephone](lesson9.html)
 10. [Revisiting the Radio](lesson10.html)
+-->
 
 Electronics: Principles
 -----------------------
 
  + [The water analogy](water_analogy.html)
- + [Kirchoff's Laws](kirchoffs.html)
+ + [Kirchoff's Laws](kirchoff.html)
  + [Ohm's Law](ohm.html)
  + [Superposition theory](superposition.html)
- + [Th&eacute;venin's theorem](tev.html)
- + [Norton's theorem](norton_theorem.html)
+ + [Th&eacute;venin's theorem](thevenin.html)
+ <!-- + [Norton's theorem](norton_theorem.html) -->
 
 Component factsheets
 --------------------

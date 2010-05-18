@@ -1,4 +1,4 @@
-#The Ohm's Law
+#Ohm's Law
 
 The relationship between the electrical current I, passing through a particular 
 component in a circuit with a voltage difference across it V is defined by the Ohm's Law:
