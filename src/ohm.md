@@ -5,7 +5,7 @@ component in a circuit with a voltage difference across it V is defined by the O
 
 $$R=\frac{V}{I}$$
 
-where R is the resistance of the component with a voltage V. Resistance measured in Ohms ($\gama$).
+where R is the resistance of the component with a voltage V. Resistance measured in Ohms ($\Omega$).
 
 Simple circuit, that represents Ohm's Law
 
@@ -15,7 +15,7 @@ Simple circuit, that represents Ohm's Law
 so if the voltage across the component is V=220V and current that flows in this circuit 
 is I=2A then resistance of this component is 
 
-$$R=\frac{220V}{2A}=110 \gama$$
+$$R=\frac{220V}{2A}=110 \Omega$$
 
 The equation also can be rearranged to give Voltage (current) if other two parameters are known.
  
