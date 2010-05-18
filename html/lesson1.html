@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title id="title">An Introduction to Electronics</title>
+<link rel="stylesheet" type="text/css" href="../static/style.css"/>
+<link rel="stylesheet" type="text/css" href="../static/code-color.css"/>
+</head>
+<body>
+<!---
+<div id="topnav">PHY342: An Introduction to electronics</div>
+--->
+<div id="main"><h1>Getting comfortable</h1>
+<h2>What you'll be learning</h2>
+<p>You'll go through several exercises, and by the end, you should:</p>
+<ul>
+<li>Know how to use a digital multimeter to measure current and voltage</li>
+<li>Understand <a href="ohm.html">Ohm's Law</a></li>
+<li>Understand <a href="kirchoffs.html">Kirchoff's laws</a></li>
+<li>Know what a resistor is, and how they behave if wired in parallel or in series</li>
+<li>Know what a capacitor is, and how they behave if wired in parallel or in series</li>
+<li>Understand capacitor charging and decay</li>
+<li>Be able to work out the time constant of a capacitor-resistor (CR) circuit.</li>
+<li>Be able to create a circuit on a breadboard from the circuit diagram.</li>
+</ul>
+<h2>What you'll need</h2>
+<p>While everything is explained, and you will pick up a lot by simply reading, you will pick up a lot more if you try all the exercises without peeking ahead at the answers. To do this, you will need a few tools and components to complete them. These are:</p>
+<ul>
+<li>A digital <a href="using_multimeter.html">multimeter</a><sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></li>
+<li>A <a href="breadboard.html">breadboard</a></li>
+<li>A 9 volt battery (Such as an 6LR61 or a regulated power supply set to 9 Volts)</li>
+<li>A bunch of <a href="resistor.html">resistors</a> and <a href="capacitor.html">capacitors</a><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> </li>
+<li>It might be nice if you have a proper switch, but, you can always use two bits of wire that you touch together instead! </li>
+</ul>
+<p>If you've already equiped yourself with <a href="components_basic.html">the basics</a>, then you're sorted!</p>
+<h2>Introduction to the digital Multimeter</h2>
+<p>A digital multimeter will be a vital tool as you beging to explore electronics. For the moment, you'll only need it to measure current and voltage. The <a href="http://uk.farnell.com/tenma/72-7725/multimeter-digital/dp/7430582">TENMA 72-7725</a> multimeter is the one we'll be using for our demos. </p>
+<p><img alt="Multimeter example" src="../resources/multimeter.jpg" /></p>
+<p>It's a manual-range multimeter (which means that you select the range of values that can be displayed manually) that can measure both alternating and direct current and voltage as well as capacitance, resistance, and temperature. In fact, even though the temperature probe is not plugged in, you can see the dial in the picture is set to measuring temperature in degree Fahrenheit. Most digital mutlimeters are pretty much the same, but can have some important differences. Make sure you refer to the manual that came with the one you'll be using. If you have a multimeter, but don't have a user's manual for it, have a look at the <a href="http://www.farnell.com/">farnell website</a> for your meter and they might have the manual you need. To save you the trouble, we've got a copy of the <a href="../resources/multimeter-manual.pdf">72-7725 manual</a>. </p>
+<h2>Resistor Circuits</h2>
+<p><a href="resistor.html">Resistors</a> are some of the most common components in electric circuit. They oppose the flow of current in a circuit. You can find out the resistance of a resistor by looking at the little bands of color that are painted on it. Have a look at <a href="resistor.html#colorcode">The Resistor Color Code</a> to learn how to decipher the colors. Don't worry about not remembering them. We have to look it up every time! The resistance indicates how strongly the resistor opposes current flow. We measure it in Ohms in honour of <a href="http://en.wikipedia.org/wiki/Georg_Ohm">Georg Ohm</a>.</p>
+<h3>Exercise 1 (Remembering Ohm's law)</h3>
+<p>Setup your breadboard as shown below using one resistors. We recommend you use large resistors (In our case we use 100 Ohm resistors.)</p>
+<p><img alt="breadboard, 9V, 100ohm " src="../resources/ex1_pic1.jpg" /></p>
+<p>Which is in fact the following cicuit.</p>
+<p><img alt="diagram, 9V, 100ohm" src="../resources/ex1_diag1.png" /></p>
+<p>Now, switch your multimeter to measuring voltage (with the appropriate range. We've used 20V) and connect the leads on either side of the resistor. </p>
+<p class="question"> What does your multimeter show?</p>
+<p class="answer"> You should find that the voltmeter displays around 9V</p>
+<p class="question"> Try reversing the leads. What does your voltmeter show now?</p>
+<p class="answer"> The value should now be around -9V. This is interesting, because it shows us that what we are actually measuring is a <em>relative difference</em> in voltage. This will become important as our circuits get more complex</p>
+<p>Now that we know the Voltage and the Resistance, we can calculate The Current according to <a href="ohm.html">Ohm's law</a>. (For those who have forgotten, current is a measure of the flow rate of charge, measured in Amp&egrave;re in units of Coulombs per second.) Using</p>
+<p><img alt="equation" class="block" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I=%5Cfrac{V}{R}"></img></p>
+<p>And the known voltage and resistance (from the rating on the resistor) We can work out that the current through the resistor is 0.09 Amp&egrave;res. (or <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?90mA"></img>). Now, this might seem very small, but in fact, one Ampere is a very large current, and besides the need for specially designed circuits to deal with the heat generated, large currents are very dangerous, and could easily cause serious injury or death. Which is why in this course, we'll only deal with small currents.</p>
+<p>We can verify our calculations by checking the current actually going through the circuit using our multimeter. Switch your multimeter to current measurment and connect one lead to the resistor and the other lead in series to the battery. Remove the connection between the resistor and the battery as shown below:</p>
+<p><img alt="measuring the voltage and current" src="../resources/ex1_pic2.jpg" /></p>
+<p class="question"> Does your measument match your calculated value? How closely? Is it bigger? Smaller? Can you explain why?</p>
+<p class="answer"> You'll find that the measured value is smaller than the calculated value. That is because the total resistance of the circuit is greater than the resistance given on the resistor. In fact, every component in the circuit has a resistance, including the ammeter. We don't take them into account because they're very small in comparison to the resistance of the resistor, but you should remember this for later. The resistance of a battery or a power source is called the <em>internal resistance</em> and can be measured like any other. Even the wires have a small resistance.</p>
+<h3>Exercise 2 (Resistors in series)</h3>
+<p>Now, Add another 100 Ohm resistor in series into your circuit as shown below.</p>
+<p><img alt="diagram and breadboard for two resistors in series" src="ex2_pic1.jpg" /></p>
+<p>Once you have set up this circuit, use your multimeter to answer the following questions:</p>
+<p class="question"> What is the voltage across both resistors? </p>
+<p class="answer"> You should see that the voltage across both resistors remains the same as before.</p>
+<p class="question"> What is the voltage across each resistor? Can you see why this is?</p>
+<p class="answer"> The voltage across each resistor should be the same and around 4.5V.</p>
+<p>Now, we can use Ohm's law to calculate the current through each resistor. Remembering that <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V=IR"></img>, calculate the current across each resistor. </p>
+<p class="question"> Does this agree with measurement using your multimeter?</p>
+<p class="answer"> The current through the resitors should be around 4.5mA.</p>
+<p>The value for the voltage an the current can be understood if we consider the water analogy. In the water analogy, the Voltage is taken to be the pressure of the water, while the current is the flow rate. In the case of two resistors in series, the water cannot branch off through another path, therefore, since we have a closed circuit, the flow rate must remain constant and be the same through both resistors. However, The pressure will progressively drop due to drag. This mirrors exactly what the voltage will do.</p>
+<p class="question"> Relative to 0, what is the voltage at the junction between the resistors?</p>
+<p class="answer"> It will be 4.5V.</p>
+<p class="question"> If the two resistor are considered as a single unit, what is the resistance of the unit?</p>
+<p class="answer"> The resistance of the unit is the sum of the resistor's resistance. ie: <strong>Resistance is additive in series</strong>. For a number N of resistors in series, the total resistance is thus:
+<img alt="equation" class="block" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?R_{total}=R_1+R_2+%5Cldots+R_N"></img></p>
+<p>This is actually a special case of a <em>potential divider</em>. A potential divider takes in a particular voltage, and spilts it to a given value. It can more easily be shown in a diagram:</p>
+<p><img alt="potential divider" src="ex2_pic3.png" /></p>
+<p>There's several new features here, so let's go through them. Firstly, you'll notice that this diagram lacks the symbol for a battery. Instead, we have what are called rails. These are the terminals labeled with a voltage. We use rails instead of batteries because in practise, it matters little if our circuit is driven from a battery or from a power pack. In the diagram, we have a nine volt and a zero volt rail, which would be equivalent to a 9 volt battery. Secondly, the ground rail is <em>grounded</em>. This is represented by the symbol made of three parallel horizontal lines, and means that the 0V rail is attached to the earth in some way. The earth acts as a very large current sink, and effectively has a voltage of 0V. </p>
+<p class="warning">The earth from a mains cable is not suitable for this purpose. It is very dangerous to use household mains earth. If the installation or an appliance has a fault, you risk electrocution. In some cases, household earth is connected to your water pipe, and even if your own installation is perfect, the earth wire may carry a current from your neighbour's faulty installation! Most small electronics project <em>will not</em> need to be earthed, and the 0V rail is suitably provided by a battery. An ideal earth is a large metal spike planted into the ground away from electrical cabling. A large metal desk will also work well for small battery-powered electronics project during testing should they really need to be earthed.</p>
+<p class="question"> How is <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_{out}"></img> governed by the values of R1 and R2? </p>
+<p class="answer"> The voltage of Vout is governed by the values of R1 and R2 by the following equation.
+<img alt="equation" class="block" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_{out}=%5Cfrac{R_2}{R_1+R_2}%5Ccdot V_{in}"></img><br />
+To arrive at this, we start by using Ohm's law to see that
+<img alt="equation" class="block" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_{in}=(R_1+R_2)%5Ccdot I_l"></img>
+Which we re-arrange for <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_l"></img> and substitute into another statement of Ohm's law
+<img alt="equation" class="block" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_{out}=%5Cfrac{I_l}{R_2}"></img>
+to give us our solution.</p>
+<p class="question"> If<br />
+</p>
+<h3>Exercise 3</h3>
+<p>What we see here is an application of <a href="ohm.html">Ohm's law</a> and <a href="kirchoff.html">Kirchoff's current law</a>. We already encountered Ohm's law in Exercise one. Kirchoff's current law </p>
+<p>Replace one of the 100 Ohm resistors by a 47 Ohm resistor. </p>
+<p>What is the voltage across the 100 Ohm resistor now?
+What is the voltage across the 47 Ohm resistor now?</p>
+<p>Potential dividers</p>
+<p>Can you now work out the internal resistance of your battery? Hint: Consider a potential divider containing a </p>
+<h2>Capacitor Circuits</h2>
+<p>time constant</p>
+<h2>What you've learnt</h2>
+<h2>Learning more on your own</h2>
+<p>We recommend a good browse through wikipedia for a bit more background info on Ohm's and Kirchoff's laws.</p>
+<hr />
+<h3>Measuring voltage</h3>
+<p>To measure voltage the clips should be placed in parallel with the component that is to be measured. To find a voltage across resistor R the voltmeter should be placed as shown in picture.</p>
+<p class="centre">
+<img alt="voltmeter" src="../resources/volt.jpg" /></p>
+<p>The reason voltmeter should be placed in parallel with the measured component is that the voltage remains the same in all components that are connected in parallel.</p>
+<h3>Measuring current</h3>
+<p>While the voltage is the same across all parallel components, the current isn't. However the current is the same in all components that are connected in series. Imagine current as flowing water. The ammount of water that flows inside the component will remain unchanged on its way out. </p>
+<p>Therefore the current measuring device - ampermeter, has to be placed in series with the component that is to be measured. Circuit below shows how ampermeter should be integrated into the circuit.</p>
+<p><img alt="Ampermeter" src="../resources/amp.jpg" /></p>
+<h2>Simple electrical circuits</h2>
+<p>We will start with very simply circuit that is shown below</p>
+<p><img alt="Circuit" src="../resources/cir1.jpg" /></p>
+<p>To make this circuit you will require</p>
+<ul>
+<li>47 Ohms resistor (any value will do)</li>
+<li>5V voltage source</li>
+<li>Multimeter</li>
+</ul>
+<p>Now try to connect this circuit, and measure the voltage across the resistor.</p>
+<p>Now try to perform a simple calculations and prove that measured voltage is the same as calculated. (Hint: use Ohm's Law)</p>
+<p>Now lets try to connect two resistors in series. You will require same equipment as before plus</p>
+<ul>
+<li>148 kOhms Resistor</li>
+</ul>
+<p>consider the circuit below</p>
+<p class="centre">
+<img alt="circuit" src="../resources/cir2.jpg" /></p>
+<p>Now using Ohm's Law calculate voltages across both resistors. You can use potential divider or just remember the fact that current remains the same in all components that are connected in series.</p>
+<p>If you performed your calculations correctly you should get <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_1=4.99 V"></img> and <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_2=1.6 mV"></img> (these values are valid only for these resistors)</p>
+<p>Now try to verify your calculations by measurement.</p>
+<p>Next circuit will give an understanding of total resistance when resistors are connected in parallel.</p>
+<p><img alt="circuit" src="../resources/cir3.jpg" /></p>
+<p>This time we know that voltage across parallel components is the same. Verify it by connecting circuit above and measuring voltage of both resistors.</p>
+<p>We know that current will not be the same in parallel components. First try to calculate the expected current value through every resistor.</p>
+<p>This is the values you should obtain: <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_1=106 mA"></img> and <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_2=0.034 mA"></img></p>
+<p>Now try to integrate your ampermeter into the circuit and verify your results.</p>
+<p>The next circuit will contain resistors in parallel and in series. Consider circuit bellow and try to find voltage and current passing through every resistor, then verify your results with measurements.</p>
+<p class="centre">
+<img alt="circuit" src="../resources/cir4.jpg" /></p>
+<p>if you used components that are shown in the picture above you should obtain the folowing values:</p>
+<p><img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_1=60 mA"></img>  <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_1=2.84 V"></img> <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_2=45 mA"></img>  <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_2=2.15 V"></img> <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?I_3=14 mA"></img>  <img alt="equation" class="inline" src="http://bricefernandes.com/cgi-bin/mimetex.cgi?V_3=2.15 V"></img></p>
+<h2>RC - circuits</h2>
+<p>RC circuits involves two components - resistors (R) and capacitors (C)</p>
+<p>The math that is involved calculating resistance, voltage and current is more complicated than the one we used previously and therefore will not be considered in this lesson. We will show the effect of having capacitors in the circuit. Also we will observe their behaviour when connected to the voltage supply.</p>
+<p>Build the following circuit, and connect your voltmeter across the capacitor.</p>
+<p class="centre">
+<img alt="circuit" src="../resources/cir5.jpg" /></p>
+<p>You will need:</p>
+<ul>
+<li>2.2 mF Capacitor (any value will do but the bigger the better)</li>
+<li>147 kOhms Resistor</li>
+<li>Voltmeter</li>
+<li>Switch</li>
+</ul>
+<p>Put switch to "on" position and observe the voltmeter. It should show the same voltage as your source. Now put switch into "off" position and observe your voltmeter.</p>
+<p>Have you noticed that voltage "died" gradually. Try to replace resistor with higher resistance, and you notice that this time capacitor "dies" even slower.</p>
+<p>When the switch was on, the voltage charged capacitor and when it was put to "off" position capacitor discharged its charge through resistor. The bigger resistance the slower discharge rate.</p>
+<p>If you feel comfortable with everything that is described in this lesson you should follow to <a href="lesson2.html">next lesson</a> </p>
+<p class="centre">
+previous lesson | <a href="index.html">Home</a> | <a href="lesson2.html">next lesson</a></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>While the specific values aren't really important to understand the concepts, the solution to the exercises are written for them. With that in mind, we recommend: three 100 Ohms resistor, two 47k Ohms resistor, three 47 microfarads capacitor and a 2200 microfarads capacitor
+&#160;<a href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Since we're just going to be using voltage and current measurment, you could easily substitute for a Voltmeter and a an Ammeter!
+&#160;<a href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></div>
+
+<div id="valid">
+    <a href="http://validator.w3.org/check?uri=referer">
+	<img
+        src="http://www.w3.org/Icons/valid-xhtml10-blue"
+        alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+	
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img 
+		style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!"/></a>
+	
+	<a href="http://www.anybrowser.org/campaign/">
+	<img
+		src="../static/valid_br.png"
+        alt="Viewable in any browser"/>
+    </a>
+</div>
+<!--
+<p class="endnote">
+    This work is licenced under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">Creative Commons Licence</a>.
+</p>-->
+
+</body>
+</html>
+
