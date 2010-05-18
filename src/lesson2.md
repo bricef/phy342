@@ -9,8 +9,8 @@
 ##What you'll need
 + 2 LEDs - red and yellow
 + 2 capacitors polirised 1uF and 2.2mF
-+ 1 PNP [transistor](pnpresistor)
-+ 1 NPN [transistor](NPNresistor)
++ 1 PNP [transistor](../resources/pnp.pdf)
++ 1 NPN [transistor](../resources/npn.pdf)
 + 4 resistors (470 Ohm, 5kohm, 10kohm, 10 Mohm) 
 + Stepper motor: Unipolar, four-phase, 12-volt. Parallax 27964 or similar.
 
@@ -82,7 +82,7 @@ For the next circuit you will require to familiarise yourself with the basic pri
 
 An example with flashing LED required AC voltage with variable frequency in order to observe these flashes. Using a combination of transistor and capacitor we can build a circuit that will make LED flash even using a direct current (DC). Build the circuit that is shown below. 
 
-Note the position of capacitor and transistors. If you will be using transistors that are shown in the diagram below take extra care connected them. The fact sheets for the transistors used in this circuit can be found [here](factsheets).
+Note the position of capacitor and transistors. If you will be using transistors that are shown in the diagram below take extra care connected them. The fact sheets for the transistors used in this circuit can be found [here](../resources/npn.pdf) and [here](../resources/pnp.pdf).
 
 ![LED](../resources/flash2.gif)
 
