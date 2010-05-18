@@ -11,11 +11,17 @@
 <!---
 <div id="topnav">PHY342: An Introduction to electronics</div>
 --->
-<div id="main"><h1>An Introduction to Electronics</h1>
+<div id="main"><h1 id="main-title">An Introduction to Electronics</h1>
+<p><img alt="Welcome to electronics" src="../resources/welcome-pic.jpg" /></p>
 <p class="centre">
-Begin by reading <a href="target_audience.html">Is this course for me?</a>, and if it is, then start off by reading the <a href="gentle.html">Gentle introduction</a>, which should lead you nicely to <a href="progressive_guide.html">The progressive guide</a>. Or, if you feel comfortable, jump straight to one of the topics below.</p>
-<p class="centre">
-If you want to get a feel for where this will take you, have a look at the later exercises, such as <a href="building_a_radio.html">building a radio</a> or <a href="fiber_telephone.html">An optical fiber telephone</a>.</p>
+<a href="target_audience.html">Is this course for me?</a></p>
+<!--
+{@class=centre}
+If you want to get a feel for where this will take you, have a look at the later exercises, such as [building a radio](building_a_radio.html) or [An optical fiber telephone](fiber_telephone.html).
+-->
+
+<div id="leftnav">
+
 <h2>Lessons</h2>
 <ol>
 <li><a href="lesson1.html">Getting comfortable</a></li>
@@ -24,25 +30,18 @@ If you want to get a feel for where this will take you, have a look at the later
 <li><a href="lesson4.html">A light following robot</a></li>
 <li><a href="lesson5.html">An Optical Telephone</a></li>
 </ol>
-<!--
-### Building on
-6. [Filters](lesson6.html)
-7. [A Simple Radio](lesson7.html)
-8. [Amplifiers](lesson8.html)
-###A digital World
-9. [The Digital Telephone](lesson9.html)
-10. [Revisiting the Radio](lesson10.html)
--->
-
-<h2>Electronics: Principles</h2>
+<h2>Principles</h2>
 <ul>
 <li><a href="water_analogy.html">The water analogy</a></li>
 <li><a href="kirchoff.html">Kirchoff's Laws</a></li>
 <li><a href="ohm.html">Ohm's Law</a></li>
 <li><a href="superposition.html">Superposition theory</a></li>
-<li><a href="thevenin.html">Th&eacute;venin's theorem</a>
- <!-- + klzzwxh:0066 --></li>
+<li><a href="thevenin.html">Th&eacute;venin's theorem</a></li>
 </ul>
+</div>
+
+<div id="rightnav">
+
 <h2>Component factsheets</h2>
 <ul>
 <li><a href="resistor.html">The Resistor</a></li>
@@ -51,83 +50,18 @@ If you want to get a feel for where this will take you, have a look at the later
 <li><a href="inductor.html">The Inductor</a></li>
 <li><a href="transistor.html">The Transistor</a></li>
 <li><a href="diode.html">The Diode</a></li>
-<li><a href="ldr_thermistor.html">The LDR and The Thermistor</a></li>
+<li><a href="ldr_thermistor.html">LDR &amp; Thermistor</a></li>
 <li><a href="led.html">The LED</a></li>
-<li><a href="opamp.html">The OpAmp</a></li>
-<li><a href="555.html">The 555 Timer</a></li>
-<li><a href="bistable_latch.html">The bistable latch</a></li>
-<li><a href="shift_register.html">The shift register</a></li>
 </ul>
 <h2>Miscallenous</h2>
-<ul>
-<li><a href="resources.html">Other Resources</a></li>
-<li><a href="acknowledgements.html">Acknowledgements</a></li>
-</ul>
-<!--
+<p><a href="resources.html">Other Resources</a>
+<a href="acknowledgements.html">Acknowledgements</a></p>
+</div>
 
-Digital electronics
--------------------
+<div id="endmatter">
 
-<ul>
-<li><a href="basic_logic.html">Basic Logic</a></li>
-<li><a href="combinatory_logic.html">Combinatory Logic</a></li>
-<li><a href="timing_diagrams.html">Understanding Timing Diagrams</a></li>
-<li><a href="pwm.html">Pulse width modulation</a></li>
-</ul>
-<h2>Circuits factsheets</h2>
-<ul>
-<li><a href="potential_divider.html">The Potential divider</a></li>
-<li><a href="rc.html">The RC circuit</a></li>
-<li><a href="rl.html">The RL circuit</a></li>
-<li><a href="lc.html">The LC circuit</a></li>
-<li><a href="rlc.html">The RLC circuit</a></li>
-</ul>
-<h2>Practical Exercises</h2>
-<p>Most excercises will require nothing beyond what is described in the basic section of the <a href="tools.html">Tools</a> page. The novice and intermediate exercises can be completed with the components specified in <a href="components_basic.html">"Basic Components"</a>. While the advanced projects will require <a href="components_ambitious.html">more ambitious components</a> </p>
-<h3>Novice</h3>
-<ul>
-<li><a href="resistor_combination.html">Resitor combination</a></li>
-<li><a href="capacitor_combination.html">Capacitor combination</a></li>
-<li><a href="ohms_law_ex.html">Appreciating Ohm's law</a></li>
-<li><a href="kirchoff_ex.html">Understanding Kirchoff's laws</a></li>
-</ul>
-<h3>Intermediate</h3>
-<ul>
-<li><a href="building_filters.html">Building filters</a> (Will require a signal generator.)</li>
-<li><a href="qucs_first_setps.html">An introduction to qucs</a> (Will require a computer)</li>
-<li><a href="homework_timer.html">The homework timer</a> (Will require an oscillating crystal)</li>
-<li><a href="norton_thevenin_ex.html">Norton and Th&eacute;venin's theorems</a></li>
-</ul>
-<h3>Advanced</h3>
-<ul>
-<li><a href="building_a_radio.html">building a radio</a></li>
-<li><a href="fiber_telephone.html">An analogue optical fiber telephone</a> (Will require optical fiber)</li>
-<li><a href="digital_telephone.html">A Digital optical fiber telephone</a> (Will require optical fiber)</li>
-</ul>
-<h2>Practical guides</h2>
-<ul>
-<li><a href="components_basic.html">Some basic components to start with</a></li>
-<li><a href="breadboard.html">The Breadboard</a></li>
-<li><a href="components_ambitious.html">Components for ambitious projects</a></li>
-<li><a href="proto_circuits.html">Prototyping circuits</a></li>
-<li><a href="soldering.html">Soldering</a></li>
-<li><a href="tools.html">Tools</a></li>
-<li><a href="using_multimeter.html">Using a multimeter</a></li>
-<li><a href="using_oscilloscope.html">Using an oscilloscope</a></li>
-<li><a href="qucs.html">Installing and Setting up QUCS</a></li>
-<li><a href="etching_pcb.html">Etching PCBs</a></li>
-</ul>
-<h2>Miscellaneous</h2>
-<ul>
-<li><a href="attribution.html">Attribution</a> (Many images and resources in this guide come from others. The full list is here.)</li>
-<li><a href="math_primer.html">Math primer</a></li>
-<li><a href="intent.html">Statement of intent</a></li>
-<li><a href="who.html">Who are we</a></li>
-<li><a href="glossary.html">Friendly Glossary of terms</a></li>
-<li><a href="further.html">Going further</a></li>
-</ul>
-<p>We also keep some <a href="educator_lessons.html">educator resources</a> such as costed component lists, marking checklist, lesson plans, etc.</p>
-<p>--&gt;</p></div>
+<p><a href="attribution.html">Attribution</a> | <a href="intent.html">Intent</a> | <a href="who.html">Who</a> | <a href="glossary.html">Glossary</a></p>
+</div></div>
 
 <div id="valid">
     <a href="http://validator.w3.org/check?uri=referer">
