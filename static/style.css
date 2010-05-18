@@ -20,8 +20,9 @@ body{
     background:#E1F1F7;
     width: 20%;
     margin-top:5em;
+    max-width:250px;
 }
-.navbox h2,h3{
+.navbox h2,.navbox h3{
     font-family:Sans-serif;
     text-align:center;
     width:100%;
