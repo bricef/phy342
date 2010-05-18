@@ -14,7 +14,7 @@
 If you want to get a feel for where this will take you, have a look at the later exercises, such as [building a radio](building_a_radio.html) or [An optical fiber telephone](fiber_telephone.html).
 -->
 
-<div id="leftnav">
+<div class="navbox" id="leftnav">
 
 Lessons
 -------
@@ -27,34 +27,32 @@ Lessons
 
 Principles
 ----------
-
- + [The water analogy](water_analogy.html)
- + [Kirchoff's Laws](kirchoff.html)
- + [Ohm's Law](ohm.html)
- + [Superposition theory](superposition.html)
- + [Th&eacute;venin's theorem](thevenin.html)
+[The water analogy](water_analogy.html)
+[Kirchoff's Laws](kirchoff.html)
+[Ohm's Law](ohm.html)
+[Superposition theory](superposition.html)
+[Th&eacute;venin's theorem](thevenin.html)
  
 </div>
 
 
 
 
-<div id="rightnav">
+<div class="navbox" id="rightnav">
 
-Component factsheets
---------------------
+Components
+----------
+[The Resistor](resistor.html)
+[The Capacitor](capacitor.html)
+[The Cell Battery](battery.html)
+[The Inductor](inductor.html)
+[The Transistor](transistor.html)
+[The Diode](diode.html)
+[LDR & Thermistor](ldr_thermistor.html)
+[The LED](led.html)
 
- + [The Resistor](resistor.html)
- + [The Capacitor](capacitor.html)
- + [The Cell Battery](battery.html)
- + [The Inductor](inductor.html)
- + [The Transistor](transistor.html)
- + [The Diode](diode.html)
- + [LDR & Thermistor](ldr_thermistor.html)
- + [The LED](led.html)
 
-
-Miscallenous
+Miscellaneous
 ------------
 [Other Resources](resources.html)
 [Acknowledgements](acknowledgements.html)
