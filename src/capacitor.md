@@ -36,6 +36,6 @@ $$C=C_1+C_2+...+C_n$$
 
 Total capacitance is given by
 
-$$C=\frac{1}{C_1}+\frac{1}{C_2}+...+\frac{1}{C_n$$
+$$\frac{1}{C}=\frac{1}{C_1}+\frac{1}{C_2}+...+\frac{1}{C_n$$
 
 
