@@ -3,7 +3,7 @@ The Resistor
 {@class=centre}
 ![A resistor](../resources/resistor_picture.jpeg)
 
-Resistors are some of the most common components of electronic circuits. They resist the flow of electricity through them, and so create a voltage difference across their terminals according to [Ohms's Law](ohms_law.html).
+Resistors are some of the most common components of electronic circuits. They resist the flow of electricity through them, and so create a voltage difference across their terminals according to [Ohms's Law](ohm.html).
 
 {@class=centre}
 ![resistor symbols](../resources/resistor_symbols.png)
