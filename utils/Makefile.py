@@ -6,7 +6,7 @@ import md2html
 
 #
 # TODO: delete files in html that are not in src.
-#
+# TODO: rewrite this ugly for make
 #
 #
 
