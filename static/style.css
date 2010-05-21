@@ -22,6 +22,9 @@ body{
     margin-top:5em;
     max-width:250px;
 }
+.navbox p{
+    text-align:left;
+}
 .navbox h2,.navbox h3{
     font-family:Sans-serif;
     text-align:center;
