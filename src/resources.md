@@ -8,7 +8,7 @@ A great electronics course much like our own can be found at [doctronics](http:/
 
 Doctronic also have a great [Beastie Zone](http://www.doctronics.co.uk/beastie_zone.htm) where you can find tons of info on various electronic components.
 
-Find any datasheet: [alldatasheet.com](http://www.alldatashete.com)
+Find any datasheet: [alldatasheet.com](http://www.alldatasheet.com)
 
 Those of you willing to dig deeper into electronics wizardry could do worse than subscribing to [Hackaday](http://hackaday.com/). You'll see what some electronics wizards get up to in their spare time, and hopefully, you'll be inspired to contribute yourself! They also have an incredibly useful Q&A site where you can ask electronics question. Make sure that your questions are as precise as possible to get fast and useful answers.
 
