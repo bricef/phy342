@@ -6,7 +6,7 @@ import md2html
 
 #
 # TODO: delete files in html that are not in src.
-# TODO: rewrite this ugly for make
+# TODO: rewrite this ugly thing with make
 #
 #
 
@@ -28,7 +28,7 @@ def make(search_path, write_path, forced=False):
     
     madestuff=False
     for path, subdirs, files in os.walk(search_path):
-        #something smells here:
+        #smellycode:
         targetdir=re.sub("src", "html", os.path.abspath(os.path.relpath(path, write_path)))
         path=os.path.abspath(path)
         

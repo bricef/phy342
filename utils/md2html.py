@@ -11,7 +11,7 @@ import markdown as md
 import sys, os, re
 from PyMeld import Meld as meld
 
-MIMETEX_LOC="http://bricefernandes.com/cgi-bin/mimetex.cgi"
+MIMETEX_LOC="httpi//brice.dyndns.org/cgi-bin/mimetex.cgi"
 TEMPLATE_LOC="../static/template.html"
 
 def usage():
