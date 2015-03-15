@@ -1,0 +1,1 @@
+An introductory course in electronics, with examples. Have a look [here](http://phy342.googlecode.com/hg/html/index.html).
